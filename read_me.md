@@ -18,6 +18,11 @@
      file is saved as log.txt in current folder. 
      
 
+shortcomings:-
+1) only one object for now.
+2) no thread support 
+3) only 3 levels
+4) parser runs for every message you log. 
 
 
 
