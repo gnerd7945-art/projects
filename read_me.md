@@ -26,7 +26,7 @@ shortcomings:-
 4) parser runs for every message you log. 
 5) cannot explicitly store file at certian location specified
 6) no file rotation. 
-
+test1
 
 
 
