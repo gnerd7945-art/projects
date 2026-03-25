@@ -13,7 +13,7 @@
 
   eg:-
 
-    logger.set_target(logtarget::BOTH); // logtarget is enum class.  options in that class: CONSOLE,FILE.BOTH
+    logger.set_target(logtarget::BOTH); // logtarget is enum class.  options in that class: CONSOLE,FILE,BOTH
     logger.set_pattern("[%t] [%l] %v");
      file is saved as log.txt in current folder. 
      
@@ -23,6 +23,8 @@ shortcomings:-
 2) no thread support 
 3) only 3 levels
 4) parser runs for every message you log. 
+5) cannot explicitly store file at certian location specified
+6) no file rotation. 
 
 
 
