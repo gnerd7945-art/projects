@@ -17,6 +17,7 @@
     logger.set_pattern("[%t] [%l] %v");
      file is saved as log.txt in current folder. 
      
+4) a simple main file example is there in repo names work.cpp
 
 shortcomings:-
 1) only one object for now.
