@@ -1,0 +1,27 @@
+# --- Compiled Binaries & Executables ---
+*
+!*.*
+!*/
+!Makefile
+!CMakeLists.txt
+
+# Specific common output names
+*.out
+*.exe
+*.app
+
+# --- Build Artifacts ---
+*.o
+*.obj
+*.so
+*.a
+
+# --- Database Files ---
+*.db
+*.sqlite
+
+# --- IDE & System Files ---
+.vscode/
+.idea/
+.DS_Store
+*.swp
