@@ -22,7 +22,7 @@ If you allocate an array: char* data = new char[10]; -> You must use delete[] da
 7) func(String& val), func(obj)-> reference, func("name")-> calls paramterized constructor but fails at binding. 
    func(string val), func("name")-> parameterized constructor called
    func(const String val),func("name")-> paramterized icnstructor called but makes val obj immutable. 
-   func(const String& val), func("name")-> calls paramterized constructor, if object passed then makes reference, without & if arg passed is object then copy constructor would have been called. 
+   func(const String& val), func("name")-> calls paramterized constructor, if object passed then makes reference, without & if arg passed is object then copy constructor would have been called.  const class_name& val works for other classes/custom classes to when r value or object passed to it. 
    func(String val), func(obj)-> copy constructor is called.
    fuinc(String val), func(std::move(obj))-> move constructor is called 
 8) overload operators cannot be made static    
@@ -147,9 +147,8 @@ for(int i =0;i<size;i++){
  }
  //8) overloading << operator, it is of std::ostream object. declared friend so we dont need to write s<<cout 
  friend std::ostream& operator<<(std::ostream &obj1, const String& obj2){
-  if(obj2.data != nullptr){
+ 
     obj1<<obj2.data;
-  }
   return obj1;
  }
  // 9) overloading += operator
@@ -157,7 +156,7 @@ for(int i =0;i<size;i++){
     
     //  char* s = new char[size+obj.size+1];
     //  for(int i =0;i<size;i++){
-    //     s[i] = data[i];
+    //     s[i] = data[i];                              
     //  }
     //  for(int i =0;i<obj.size;i++){
     //     s[size+i] = obj.data[i];

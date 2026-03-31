@@ -98,7 +98,7 @@ private:
 
 public: 
 
-    void set_pattern(std::string S) { 
+    void set_pattern(const std::string& S) { 
         pattern = std::move(S);
     }
 
