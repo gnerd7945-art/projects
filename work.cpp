@@ -1,4 +1,4 @@
-#include "my_logger.h" 
+#include "MYLOGGER_H.h" 
 #include <iostream>
 #include "string.h"
 
@@ -14,7 +14,12 @@ public:
 };
 
 int main() {    
-    // mylogger& main_logger = mylogger::create_instance();
+     mylogger& main_logger = mylogger::create_instance();
+     main_logger.set_level(loglevel::ERROR);
+     main_logger.set_pattern("[%l] %t: %v");
+     main_logger.set_target(logtarget::FILE,"log.txt");
+     main_logger.info("some info");
+     main_logger.error("warn");
     
     // main_logger.set_target(logtarget::BOTH);
     // main_logger.set_pattern("[%t] [%l] %v"); 
@@ -29,6 +34,7 @@ int main() {
    // mylogger logger_dup ; //copy constructor deleted. 
 
    // mylogger logger_dup = mylogger::create_instance(); copy construcotr called
+
        String s ="sugam";
        s.insert(2,"ami");
        std::cout<<s<<std::endl;
@@ -67,7 +73,16 @@ int main() {
 
         String s9 = "hi";
         String S10(std::move(s9));
+            std::cout<< "\n"<<std::endl;
 
+        String str = String("hi"); // logically: 
+        //Step 1: Create a temporary String object from "hi" (Parameterized).
+
+        // Step 2: Move that temporary into str (Move Constructor).
+
+        // Step 3: Destroy the temporary (Destructor).
+        // but copy ellison just directly does: String str("hi")
+        std::cout<<str<<std::endl;    
 
 
     return 0;

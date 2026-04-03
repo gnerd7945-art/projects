@@ -1,0 +1,42 @@
+2026-04-03 14:16:46 WARN ram greater than set limit 
+2026-04-03 14:16:47 INFO PID  Name  PSS
+2026-04-03 14:16:47 INFO  2237 firefox                    481900 
+2026-04-03 14:16:47 INFO 131385 Isolated Web Co            471615 
+2026-04-03 14:16:47 INFO 128995 code                       400619 
+2026-04-03 14:16:47 INFO got top 3 most ram consuming process
+2026-04-03 14:16:47 INFO total gap is -2.043545
+2026-04-03 14:16:53 WARN ram greater than set limit 
+2026-04-03 14:16:54 INFO PID  Name  PSS
+2026-04-03 14:16:54 INFO  2237 firefox                    481904 
+2026-04-03 14:16:54 INFO 131385 Isolated Web Co            471599 
+2026-04-03 14:16:54 INFO 128995 code                       402605 
+2026-04-03 14:16:54 INFO got top 3 most ram consuming process
+2026-04-03 14:16:54 INFO total gap is -2.044375
+2026-04-03 14:17:00 WARN ram greater than set limit 
+2026-04-03 14:17:01 INFO PID  Name  PSS
+2026-04-03 14:17:01 INFO  2237 firefox                    481904 
+2026-04-03 14:17:01 INFO 131385 Isolated Web Co            471607 
+2026-04-03 14:17:01 INFO 128995 code                       404700 
+2026-04-03 14:17:01 INFO got top 3 most ram consuming process
+2026-04-03 14:17:01 INFO total gap is -2.039861
+2026-04-03 14:17:07 WARN ram greater than set limit 
+2026-04-03 14:17:09 INFO PID  Name  PSS
+2026-04-03 14:17:09 INFO  2237 firefox                    481956 
+2026-04-03 14:17:09 INFO 131385 Isolated Web Co            471607 
+2026-04-03 14:17:09 INFO 128995 code                       398937 
+2026-04-03 14:17:09 INFO got top 3 most ram consuming process
+2026-04-03 14:17:09 INFO total gap is -2.040951
+2026-04-03 14:17:15 WARN ram greater than set limit 
+2026-04-03 14:17:16 INFO PID  Name  PSS
+2026-04-03 14:17:16 INFO  2237 firefox                    481960 
+2026-04-03 14:17:16 INFO 131385 Isolated Web Co            471623 
+2026-04-03 14:17:16 INFO 128995 code                       400983 
+2026-04-03 14:17:16 INFO got top 3 most ram consuming process
+2026-04-03 14:17:16 INFO total gap is -2.044064
+2026-04-03 14:17:22 WARN ram greater than set limit 
+2026-04-03 14:17:23 INFO PID  Name  PSS
+2026-04-03 14:17:23 INFO  2237 firefox                    481960 
+2026-04-03 14:17:23 INFO 131385 Isolated Web Co            471623 
+2026-04-03 14:17:23 INFO 128995 code                       402903 
+2026-04-03 14:17:23 INFO got top 3 most ram consuming process
+2026-04-03 14:17:23 INFO total gap is -2.045361

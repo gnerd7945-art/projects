@@ -23,7 +23,8 @@ enum class logtarget {
 
 class mylogger {
 private:
-    mylogger()= default; // private so mylogger logger cannot be used. 
+    loglevel min_level= loglevel::INFO;
+   mylogger()= default; // private so mylogger logger cannot be used. 
     std::string pattern = ""; 
     logtarget target = logtarget::CONSOLE; 
     std::ofstream file_stream;
@@ -40,7 +41,7 @@ private:
     }
     // delete copy constructor and copy assignment constructor 
     mylogger(const mylogger&) = delete; //delete copyconstructor so no one  accieently calls it 
-    // mylogger& operator=(const mylogger&) = delete; // delete = overloaded  assignemnt for creating new cinstructor, prevents: mylogger logA = mylogger::get_instance();
+    mylogger& operator=(const mylogger&) = delete; // delete = overloaded  assignemnt for creating new cinstructor, prevents: mylogger logA = mylogger::get_instance();
     std::string timestamp() {
         auto now = std::chrono::system_clock::now();
         std::time_t now_c = std::chrono::system_clock::to_time_t(now);  // making it c language type 
@@ -86,6 +87,9 @@ private:
     }
 
     void dispatch_log(loglevel level, const std::string& msg) {
+        if(level<min_level){
+            return;
+        }
         if (target == logtarget::CONSOLE || target == logtarget::BOTH) {
             std::cout << parse(level, msg, true) << std::endl;
         }
@@ -97,6 +101,9 @@ private:
     }
 
 public: 
+    void set_level(loglevel level){
+        min_level = level;
+    }
 
     void set_pattern(const std::string& S) { 
         pattern = std::move(S);

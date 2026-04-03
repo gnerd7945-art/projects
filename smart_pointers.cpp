@@ -19,7 +19,9 @@ class unique_pointer{
     unique_pointer(){
         ptr = nullptr;
     };
-    unique_pointer(int* input): ptr(input){}; // parameterized constructor 
+    unique_pointer(int* input): ptr(input){
+        std::cout<<"params called"<<std::endl;
+    }; // parameterized constructor 
 
     
 
@@ -32,6 +34,7 @@ class unique_pointer{
         delete[] ptr;
         ptr = obj.ptr;
         obj.ptr = nullptr;
+        std::cout<<"move assignment called"<<std::endl;
     } 
     
 
